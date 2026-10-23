@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int nilai[5];
+
+    for (int i = 0; i < 5; i++) {
+        cout << "Masukkan nilai: ";
+        cin >> nilai[i];
+
+        if (nilai[i] < 0 || nilai[i] > 100)
+            cout << "Nilai tidak valid\n";
+        else if (nilai[i] > 90)
+            cout << "Nilai A\n";
+        else if (nilai[i] > 80)
+            cout << "Nilai B\n";
+        else if (nilai[i] > 70)
+            cout << "Nilai C\n";
+        else
+            cout << "Nilai D\n";
+    }
+
+    return 0;
+}
